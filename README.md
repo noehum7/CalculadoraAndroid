@@ -53,4 +53,9 @@ El proyecto incluye pruebas unitarias e instrumentadas básicas que pueden ejecu
     <a href="https://github.com/noehum7/CalculadoraAndroid">
         <img src="https://img.shields.io/github/stars/noehum7/CalculadoraAndroid?style=social" alt="GitHub stars">
     </a>
+    <a href="https://github.com/noehum7/CalculadoraAndroid"> 
+        <img src="https://img.shields.io/badge/GitHub-Repositorio-blue?style=for-the-badge&logo=github" alt="GitHub Repo"/> 
+    </a> 
+    <img src="https://img.shields.io/badge/Android-API%2026+-green?style=for-the-badge&logo=android" alt="Android API"/> 
+    <img src="https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge" alt="Licencia"/>
 </div>
