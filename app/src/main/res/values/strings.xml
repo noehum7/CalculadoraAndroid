@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">trabajoProgrMoviles</string>
+    <string name="app_title">Calculadora</string>
+    <string name="toast_data_saved">Datos guardados</string>
+    <string name="toast_enter_valid_values_saved">Por favor, ingrese dos valores válidos antes de guardar</string>
+    <string name="toast_enter_valid_values_calculated">Por favor, ingrese dos valores válidos antes de calcular</string>
+    <string name="cannot_divide_by_zero">No se puede dividir por 0</string>
+    <string name="toast_enter_valid_operation">Por favor, seleccione una operación</string>
+</resources>

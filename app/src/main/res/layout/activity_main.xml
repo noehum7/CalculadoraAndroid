@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/EstiloFondoAPP"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lNumeros"
+        style="@style/EstiloTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/tNumero1"
+            style="@style/EstiloTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Introduce un número"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/tNumero2"
+            style="@style/EstiloTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Introduce un número"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgBotones">
+
+        <Button
+            android:id="@+id/bMostrar"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="mostrarDatos"
+            android:text="Mostrar"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/bGuardar"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="guardarDatos"
+            android:text="Guardar"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/bBorrar"
+            style="@style/EstiloBotonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="borrarDatos"
+            android:text="Borrar"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/bCalcular"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="calcular"
+            android:text="Calcular"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:layout_marginBottom="209dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lOpciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lNumeros">
+
+        <RadioButton
+            android:id="@+id/rbSumar"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7F47D0"
+            android:text="Sumar"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rbRestar"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7F47D0"
+            android:text="Restar"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rbMultiplicar"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7F47D0"
+            android:text="Multiplicar"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/rbDividir"
+            style="@style/EstiloBotonOperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#7F47D0"
+            android:text="Dividir"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tResultado"
+        style="@style/EstiloTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:background="#F7FAFAFA"
+        android:hint="Resultado"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lOpciones"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
